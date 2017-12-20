@@ -51,6 +51,10 @@ Source: https://www.pexels.com/u/fancycrave-60738/
 
 == Changelog ==
 
+Version 1.17 (2017-12-20)
+-------------------------
+- Fixed caption text color when in dark mode
+
 Version 1.16 (2017-12-03)
 -------------------------
 - Made functions.php functions pluggable
