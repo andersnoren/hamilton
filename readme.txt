@@ -51,6 +51,20 @@ Source: https://www.pexels.com/u/fancycrave-60738/
 
 == Changelog ==
 
+Version 1.19 (2018-11-03)
+-------------------------
+- Updated with Gutenberg support
+	- Gutenberg editor styles
+	- Styling of Gutenberg blocks
+	- Custom Hamilton Gutenberg palette
+	- Custom Hamilton Gutenberg typography styles
+- Added option to disable Google Fonts with a translateable string
+- Updated theme description
+
+Version 1.18 (2018-05-24)
+-------------------------
+- Improved styling of checkboxes in the comment form
+
 Version 1.17 (2017-12-20)
 -------------------------
 - Fixed caption text color when in dark mode
