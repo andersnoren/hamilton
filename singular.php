@@ -13,7 +13,7 @@ if ( have_posts() )  :
 				<div>
 			
 					<?php 
-					the_title( '<h1 class="title">', '</h2>' );
+					the_title( '<h1 class="title">', '</h1>' );
 
 					// Make sure we have a custom excerpt
 					if ( has_excerpt() ) the_excerpt();

@@ -2,7 +2,7 @@
 
 	Theme Name: Hamilton
     Text Domain: hamilton
-	Version: 1.19
+	Version: 1.23
 	Description: Hamilton is a clean WordPress portfolio theme for creatives. It displays posts in a beautiful image grid that can be set to either two or three columns, which makes it a perfect fit for photographers, illustrators or graphic designers looking for a theme for their portfolio. It also features Gutenberg support, a dark mode, custom background color support, a resume page template, responsive design, Jetpack infinite scroll support, editor styling, and much more. Demo: http://andersnoren.se/themes/hamilton/
 	Tags: blog, two-columns, three-columns, custom-menu, featured-images, threaded-comments, translation-ready, grid-layout, custom-background, custom-logo, editor-style, sticky-post, theme-options, portfolio, photography
 	Author: Anders Norén
@@ -1161,9 +1161,18 @@ address {
 	word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
+.entry-content pre a {
+	border-bottom-color: #fff;
+	color: inherit;
+}
+
 .dark-mode .entry-content pre {
 	background: #fff;
 	color: #000;
+}
+
+.dark-mode .entry-content pre a {
+	border-bottom-color: #000;
 }
 
 p.has-drop-cap:not(:focus):first-letter {
@@ -1483,6 +1492,10 @@ button,
 input[type="button"]:hover,
 input[type="submit"]:hover {
 	cursor: pointer;
+}
+
+.mejs-container button { 
+	min-width: auto; 
 }
 
 .dark-mode button,

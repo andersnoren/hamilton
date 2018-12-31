@@ -51,6 +51,24 @@ Source: https://www.pexels.com/u/fancycrave-60738/
 
 == Changelog ==
 
+Version 1.23 (2018-12-07)
+-------------------------
+- Fixed Gutenberg style changes required due to changes in the block editor CSS and classes
+- Fixed the Classic Block TinyMCE buttons being set to the wrong font
+
+Version 1.22 (2018-11-30)
+-------------------------
+- Fixed Gutenberg editor styles font being overwritten
+
+Version 1.21 (2018-11-06)
+-------------------------
+- Fixed color of links in pre block
+- Fixed post titles being closed incorrectly in singular.php
+
+Version 1.20 (2018-11-04)
+-------------------------
+- Fixed MediaElement.js player button styling issue
+
 Version 1.19 (2018-11-03)
 -------------------------
 - Updated with Gutenberg support
