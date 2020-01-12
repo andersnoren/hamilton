@@ -16,7 +16,7 @@ if ( has_post_thumbnail() && ! post_password_required() ) {
 	$extra_classes .= ' fallback-image';
 }
 
-$image_style_attr = ( has_post_thumbnail() && ! post_password_required() ) ? ' style="background-image: url( ' . get_the_post_thumbnail_url( 'hamilton_preview-image' ) . ' );"' : '';
+$image_style_attr = ( has_post_thumbnail() && ! post_password_required() ) ? ' style="background-image: url( ' . get_the_post_thumbnail_url( $post->ID, 'hamilton_preview-image' ) . ' );"' : '';
 
 ?>
 

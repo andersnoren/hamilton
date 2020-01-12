@@ -51,6 +51,10 @@ Source: https://www.pexels.com/u/fancycrave-60738/
 
 == Changelog ==
 
+Version 1.26 (2019-07-20)
+-------------------------
+- Fixed issue with images on archive pages
+
 Version 1.25 (2019-07-20)
 -------------------------
 - Added theme URI to style.css
