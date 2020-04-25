@@ -19,7 +19,7 @@ if ( ! function_exists( 'hamilton_setup' ) ) {
 		
 		// Custom Image Sizes
 		add_image_size( 'hamilton_preview-image', 1200, 9999 );
-		add_image_size( 'hamilton_fullscreen-image', 1860, 9999 );
+		set_post_thumbnail_size( 1860, 9999 );
 		
 		// Background color
 		add_theme_support( 'custom-background', array(
@@ -113,7 +113,7 @@ if ( ! function_exists( 'hamilton_add_editor_styles' ) ) {
 
 	function hamilton_add_editor_styles() {
 
-		$editor_styles = array( 'hamilton-editor-styles.css' );
+		$editor_styles = array( 'assets/css/hamilton-classic-editor-styles.css' );
 
 		/**
 		 * Translators: If there are characters in your language that are not
@@ -511,7 +511,7 @@ if ( ! function_exists( 'hamilton_block_editor_styles' ) ) :
 		}
 
 		// Enqueue the editor styles
-		wp_enqueue_style( 'hamilton-block-editor-styles', get_theme_file_uri( '/hamilton-gutenberg-editor-style.css' ), $dependencies, '1.0', 'all' );
+		wp_enqueue_style( 'hamilton-block-editor-styles', get_theme_file_uri( '/assets/css/hamilton-block-editor-styles.css' ), $dependencies, '1.0', 'all' );
 
 	}
 	add_action( 'enqueue_block_editor_assets', 'hamilton_block_editor_styles', 1 );

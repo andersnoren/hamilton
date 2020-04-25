@@ -2,7 +2,7 @@
 
 	Theme Name: Hamilton
     Text Domain: hamilton
-	Version: 1.27
+	Version: 1.28
 	Description: Hamilton is a clean WordPress portfolio theme for creatives. It displays posts in a beautiful image grid that can be set to either two or three columns, which makes it a perfect fit for photographers, illustrators or graphic designers looking for a theme for their portfolio. It also features Block Editor/Gutenberg support, a dark mode, custom background color support, a resume page template, responsive design, Jetpack infinite scroll support, editor styling, and much more. Demo: https://andersnoren.se/themes/hamilton/
 	Tags: blog, two-columns, three-columns, custom-menu, featured-images, threaded-comments, translation-ready, grid-layout, custom-background, custom-logo, editor-style, sticky-post, theme-options, portfolio, photography, block-styles, wide-blocks
 	Author: Anders Norén
@@ -148,6 +148,7 @@ body * {
         -webkit-box-sizing: border-box; 
         -moz-box-sizing: border-box; 
 	box-sizing: border-box; 
+	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -184,9 +185,9 @@ img {
 	color: #FFF;
 }
 
-input::-webkit-input-placeholder { color: #999; }
-input:-ms-input-placeholder { color: #999; }
-input::-moz-placeholder { color: #999; }
+input::-webkit-input-placeholder { color: #767676; }
+input:-ms-input-placeholder { color: #767676; }
+input::-moz-placeholder { color: #767676; }
 
 
 /* -------------------------------------------------------------------------------- */
@@ -257,12 +258,12 @@ a {
 }
 
 .site-header .site-title a:hover {
-	color: rgba( 0, 0, 0, .35 );
+	color: rgba( 0, 0, 0, .55 );
 	text-decoration: none;
 }
 
 .dark-mode .site-header .site-title a:hover {
-	color: rgba( 255, 255, 255, .35 );
+	color: rgba( 255, 255, 255, .55 );
 }
 
 .site-header .custom-logo {
@@ -416,11 +417,11 @@ a {
 }
 
 .site-nav ul + ul a {
-	color: rgba( 0, 0, 0, .35 );
+	color: rgba( 0, 0, 0, .55 );
 }
 
 .dark-mode .site-nav ul + ul a {
-	color: rgba( 255, 255, 255, .35 );
+	color: rgba( 255, 255, 255, .55 );
 }
 
 .site-nav ul a:hover {
@@ -439,12 +440,12 @@ a {
 
 .site-nav ul:last-child a:hover,
 .site-nav ul:last-child .current-menu-item > a { 
-	border-bottom-color: rgba( 0, 0, 0, .35 );
+	border-bottom-color: rgba( 0, 0, 0, .55 );
 }
 
 .dark-mode .site-nav ul:last-child a:hover,
 .dark-mode .site-nav ul:last-child .current-menu-item > a { 
-	border-bottom-color: rgba( 255, 255, 255, .35 );
+	border-bottom-color: rgba( 255, 255, 255, .55 );
 }
 
 .site-nav footer {
@@ -470,12 +471,12 @@ a {
 }
 
 .site-nav footer p:last-child { 
-	color: rgba( 0, 0, 0, .35 );
+	color: rgba( 0, 0, 0, .55 );
 	float: right; 
 }
 
 .dark-mode .site-nav footer p:last-child { 
-	color: rgba( 255, 255, 255, .35 );
+	color: rgba( 255, 255, 255, .55 );
 }
 
 
@@ -763,7 +764,7 @@ a {
 	transform: translateY( 10px );
 }
 
-.post-preview.sticky .sticky-post {
+.post-preview .sticky-post {
 	color: #fff;
 	font-size: 13px;
 	font-weight: 700;
@@ -896,13 +897,13 @@ a {
 /* Meta ----------------------------- */
 
 .meta {	
-	color: rgba( 0, 0, 0, .35 );
+	color: rgba( 0, 0, 0, .55 );
 	font-size: 18px;
 	margin-top: 30px;
 }
 
 .dark-mode .meta {	
-	color: rgba( 255, 255, 255, .35 );
+	color: rgba( 255, 255, 255, .55 );
 }
 
 .meta span {
@@ -915,12 +916,12 @@ a {
 }
 
 .meta a:hover {
-	border-bottom-color: rgba( 0, 0, 0, .35 );
+	border-bottom-color: rgba( 0, 0, 0, .55 );
 	text-decoration: none;
 }
 
 .dark-mode .meta a:hover {
-	border-bottom-color: rgba( 255, 255, 255, .35 );
+	border-bottom-color: rgba( 255, 255, 255, .55 );
 }
 
 
@@ -1268,7 +1269,7 @@ figure {
 
 .entry-content figcaption,
 .entry-content .wp-caption-text {
-	color: rgba( 0, 0, 0, .5 );
+	color: rgba( 0, 0, 0, .55 );
 	margin-bottom: 0;
 }
 
@@ -1926,12 +1927,12 @@ ul.wp-block-social-links {
 }
 
 .comment-metadata {
-	color: rgba( 0, 0, 0, .35 );
+	color: rgba( 0, 0, 0, .55 );
 	line-height: 1.25;
 }
 
 .dark-mode .comment-metadata {
-	color: rgba( 255, 255, 255, .35 );
+	color: rgba( 255, 255, 255, .55 );
 }
 
 .comment-content,
@@ -1977,11 +1978,11 @@ ul.wp-block-social-links {
 }
 
 .comments-pagination .page-numbers.dots {
-	color: rgba( 0, 0, 0, .35 );
+	color: rgba( 0, 0, 0, .55 );
 }
 
 .dark-mode .comments-pagination .page-numbers.dots {
-	color: rgba( 255, 255, 255, .35 );
+	color: rgba( 255, 255, 255, .55 );
 }
 
 .comments-pagination .prev,
@@ -2003,14 +2004,14 @@ ul.wp-block-social-links {
 }
 
 .comment-respond .logged-in-as {
-	color: rgba( 0, 0, 0, .35 );
+	color: rgba( 0, 0, 0, .55 );
 	font-size: 18px;
 	line-height: 1.25;
 	margin: 0 0 50px 0;
 }
 
 .dark-mode .comment-respond .logged-in-as {
-	color: rgba( 255, 255, 255, .35 );
+	color: rgba( 255, 255, 255, .55 );
 }
 
 .comment-respond p + p { 
@@ -2109,11 +2110,11 @@ ul.wp-block-social-links {
 .post-pagination .next-posts-link { float: right; }
 
 .post-pagination a {
-	color: rgba( 0, 0, 0, .35 );
+	color: rgba( 0, 0, 0, .55 );
 }
 
 .dark-mode .post-pagination a {
-	color: rgba( 255, 255, 255, .35 );
+	color: rgba( 255, 255, 255, .55 );
 }
 
 .post-pagination a:hover {
@@ -2160,7 +2161,7 @@ ul.wp-block-social-links {
 .infinite-scroll #infinite-handle button:focus {
 	background: none;
 	border-radius: 0;
-	color: rgba( 0, 0, 0, .5 );
+	color: rgba( 0, 0, 0, .55 );
 	font-size: 40px;
 	font-weight: 300;
 	letter-spacing: -0.025em;
@@ -2258,13 +2259,13 @@ ul.wp-block-social-links {
 }
 
 .site-footer p + p { 
-	color: rgba( 0, 0, 0, .35 );
+	color: rgba( 0, 0, 0, .55 );
 	font-size: 18px;
     margin-top: 12px; 
 }
 
 .dark-mode .site-footer p + p {
-	color: rgba( 255, 255, 255, .35 );
+	color: rgba( 255, 255, 255, .55 );
 }
 
 .site-footer a {
@@ -2288,11 +2289,11 @@ ul.wp-block-social-links {
 }
 
 .site-footer p + p a:hover {
-	border-bottom-color: rgba( 0, 0, 0, .35 );
+	border-bottom-color: rgba( 0, 0, 0, .55 );
 }
 
 .dark-mode .site-footer p + p a:hover {
-	border-bottom-color: rgba( 255, 255, 255, .35 );
+	border-bottom-color: rgba( 255, 255, 255, .55 );
 }
 
 
@@ -2622,7 +2623,7 @@ ul.wp-block-social-links {
 		top: 20px;
 	}
 	
-	.post-preview.sticky .sticky-post {
+	.post-preview .sticky-post {
 		font-size: 11px;
 		letter-spacing: 1px;
 		margin-bottom: 5px;

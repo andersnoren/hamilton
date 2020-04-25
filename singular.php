@@ -6,14 +6,14 @@ if ( have_posts() )  :
 
 	while ( have_posts() ) : the_post(); ?>
 
-		<div <?php post_class( 'section-inner' ); ?>>
+		<article <?php post_class( 'entry section-inner' ); ?>>
 		
 			<header class="page-header section-inner thin<?php if ( has_post_thumbnail() ) echo ' fade-block'; ?>">
 			
 				<div>
 			
 					<?php 
-					the_title( '<h1 class="title">', '</h1>' );
+					the_title( '<h1 class="title entry-title">', '</h1>' );
 
 					// Make sure we have a custom excerpt
 					if ( has_excerpt() ) the_excerpt();
@@ -46,15 +46,18 @@ if ( have_posts() )  :
 
 			<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 
-				<div class="featured-image">
-					<?php the_post_thumbnail( 'hamilton_fullscreen-image' ); ?>
+				<div class="entry-image featured-image">
+					<?php the_post_thumbnail(); ?>
 				</div>
 
 			<?php endif; ?>
 
 			<div class="entry-content section-inner thin">
 
-				<?php the_content(); ?>
+				<?php 
+				the_content();
+				edit_post_link(); 
+				?>
 
 			</div> <!-- .content -->
 
@@ -91,7 +94,7 @@ if ( have_posts() )  :
 			
 			<?php endif; ?>
 
-		</div> <!-- .post -->
+		</article><!-- .entry -->
 
 		<?php 
 		

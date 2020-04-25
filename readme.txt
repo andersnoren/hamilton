@@ -24,7 +24,6 @@ All theme specific options are handled through the WordPress Customizer.
 In the resume page template, all titles span the entire width of the content, whereas all other elements are aligned to the right. This enables you to create sections in the resume content by simple adding another title. For instance, adding a title called "Education" and adding a paragraph of text beneath it will automatically create a section with the "Education" title to the left and the paragraph of text to the right.
 
 
-
 == Frequently Asked Questions ==
 
 = How do I activate infinite scroll? =
@@ -50,6 +49,18 @@ Source: https://www.pexels.com/u/fancycrave-60738/
 
 
 == Changelog ==
+
+Version 1.28 (2020-04-25)
+-------------------------
+- Singular: Added output of edit link after the entry content.
+- Singular: Changed the post_class element to a `article` element.
+- Singular: Added the `entry` class to the `article` element, and the `entry-title` class to the post heading.
+- Set the post thumbnail size to the size of the `hamilton_fullscreen-image` image size, and removed said image size.
+- Moved the editor styles to the new `/assets/css/` folder, and renamed them.
+- Removed output of "Comments closed" when the comments field is closed.
+- Fixed targeting of the "Sticky post" string in post previews.
+- Updated Firefox text aliasing to better match Safari and Chrome.
+- Increased the color contrast of the light gray color.
 
 Version 1.27 (2020-04-02)
 -------------------------
