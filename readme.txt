@@ -50,6 +50,11 @@ Source: https://www.pexels.com/u/fancycrave-60738/
 
 == Changelog ==
 
+Version 2.0.1 (2020-04-30)
+-------------------------
+- Don't output the default archive title ("Archive") on the blog page when a hamilton_home_title isn't set in the Customizer.
+- Fixed preview refresh when changing hamilton_home_title.
+
 Version 2.0.0 (2020-04-30)
 -------------------------
 - Removed all title attributes from links.

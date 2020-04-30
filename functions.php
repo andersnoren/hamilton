@@ -1,7 +1,8 @@
 <?php
 
-/* THEME SETUP
------------------------------------------------- */
+/*	-----------------------------------------------------------------------------------------------
+	THEME SETUP
+--------------------------------------------------------------------------------------------------- */
 
 if ( ! function_exists( 'hamilton_setup' ) ) :
 	function hamilton_setup() {
@@ -278,8 +279,12 @@ if ( ! function_exists( 'hamilton_filter_archive_title' ) ) :
 			$title = single_term_title( '', false );
 		} elseif ( is_search() ) {
 			$title = sprintf( __( 'Search: %s', 'hamilton' ), '&ldquo;' . get_search_query() . '&rdquo;' );
-		} elseif ( is_home() && $paged == 0 && get_theme_mod( 'hamilton_home_title' ) ) {
-			$title = get_theme_mod( 'hamilton_home_title' );
+		} elseif ( is_home() ) {
+			if ( $paged == 0 && get_theme_mod( 'hamilton_home_title' ) ) {
+				$title = get_theme_mod( 'hamilton_home_title' );
+			} else {
+				$title = '';
+			}
 		}
 
 		return $title;

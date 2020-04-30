@@ -76,7 +76,6 @@ if ( ! class_exists( 'Hamilton_Customize' ) ) :
 			$wp_customize->add_setting( 'hamilton_home_title', array(
 				'capability' 		=> 'edit_theme_options',
 				'sanitize_callback' => 'sanitize_textarea_field',
-				'transport'			=> 'postMessage'
 			) );
 
 			$wp_customize->add_control( 'hamilton_home_title', array(
