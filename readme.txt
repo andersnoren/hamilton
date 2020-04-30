@@ -1,8 +1,8 @@
 === Hamilton ===
 Contributors: Anlino
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anders%40andersnoren%2ese&lc=US&item_name=Free%20WordPress%20Themes%20from%20Anders%20Noren&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
-Requires at least: 4.4
-Tested up to: 5.4
+Requires at least: 4.5
+Tested up to: 5.4.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -49,6 +49,33 @@ Source: https://www.pexels.com/u/fancycrave-60738/
 
 
 == Changelog ==
+
+Version 2.0.0 (2020-04-30)
+-------------------------
+- Removed all title attributes from links.
+- Removed default removal of list style from ordered and unordered lists.
+- Reworked the CSS reset to inherit rather than unset.
+- Updated "Requires at least" to 4.5, since we're using custom_logo
+- Bumped "Tested up to" to 5.4.1.
+- Reworked the header title output to be simpler, output a H1 heading in the right circumstances, and include the site title as screen reader text when a logo is set.
+- Removed code specific to the languages folder, which no longer exists (localization is handled through GlotPress on WordPress.org).
+- Added theme version to enqueues.
+- Renamed the Hamilton_Customize class to be camelcased, and moved it to the new `/inc/classes/` folder.
+- Moved modifications of the archive title and description to filters for get_the_archive_title/_description, and simplified `index.php`.
+- Updated the archive title element to be either h1 or h2, depending on the page being displayed.
+- Changed the featured image wrapping element to a `figure`.
+- Added a `global $post;` before using `setup_postdata()` in `related-posts.php`.
+- Changed targeting of block editor colors and font sizes to apply outside of the entry content.
+- Fixed base block margins targeting of the social block.
+- CSS: Added new sections for Element Base and Blocks, and restructured the file accordingly.
+- Set links to be underlined by default, and inherit their colors.
+- Changed styles for lists, headings and paragraphs to be global instead of entry content specific, which reduces specificity and makes it easier to maintain compatibility with the Core block editor styles.
+- Removed removal of outline from inputs.
+- Added base styles for more inputs.
+- Changed the navigation toggle to a button, and added screen reader text.
+- Reworked the site navigation so the nav footer is not sticky.
+- Fixed issue with Jetpack infinite scroll.
+- Converted the theme screenshot to JPG, reducing file size by 500 KB.
 
 Version 1.28 (2020-04-25)
 -------------------------

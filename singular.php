@@ -13,6 +13,7 @@ if ( have_posts() )  :
 				<div>
 			
 					<?php 
+
 					the_title( '<h1 class="title entry-title">', '</h1>' );
 
 					// Make sure we have a custom excerpt
@@ -36,7 +37,7 @@ if ( have_posts() )  :
 								); ?>
 							<?php endif; ?>
 
-						</div>
+						</div><!-- .meta -->
 
 					<?php endif; ?>
 					
@@ -46,9 +47,9 @@ if ( have_posts() )  :
 
 			<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 
-				<div class="entry-image featured-image">
+				<figure class="entry-image featured-image">
 					<?php the_post_thumbnail(); ?>
-				</div>
+				</figure>
 
 			<?php endif; ?>
 
@@ -59,7 +60,7 @@ if ( have_posts() )  :
 				edit_post_link(); 
 				?>
 
-			</div> <!-- .content -->
+			</div><!-- .content -->
 
 			<?php 
 			
@@ -77,20 +78,20 @@ if ( have_posts() )  :
 					
 					<?php endif; ?>
 
-					<p><a href="<?php the_permalink(); ?>" title="<?php the_time( get_option( 'date_format' ) ); ?> <?php the_time( get_option( 'time_format' ) ); ?>"><?php the_date( get_option( 'date_format' ) ); ?></a>
+					<p><a href="<?php the_permalink(); ?>"><?php the_date( get_option( 'date_format' ) ); ?></a>
 
-				</div> <!-- .meta -->
+				</div><!-- .meta -->
 
 			<?php endif; ?>
 			
 			<?php 
 			
-			// Output comments wrapper if it's a post, or if comments are open, or if there's a comment number – and check for password
-			if ( ( $post_type == 'post' || comments_open() || get_comments_number() ) && ! post_password_required() ) : ?>
+			// Output comments wrapper if comments are open, or if there's a comment number – and check for password
+			if ( ( comments_open() || get_comments_number() ) && ! post_password_required() ) : ?>
 			
 				<div class="section-inner thin">
 					<?php comments_template(); ?>
-				</div>
+				</div><!-- .section-inner -->
 			
 			<?php endif; ?>
 

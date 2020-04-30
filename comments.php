@@ -17,7 +17,7 @@
 		
 		<?php endif; ?>
     
-	</div> <!-- comments -->
+	</div><!-- comments -->
   
 <?php endif; ?>
 
