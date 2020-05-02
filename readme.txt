@@ -50,6 +50,10 @@ Source: https://www.pexels.com/u/fancycrave-60738/
 
 == Changelog ==
 
+Version 2.0.2 (2020-05-01)
+-------------------------
+- Fixed the archive navigation having underlined links (thanks, @ventair).
+
 Version 2.0.1 (2020-04-30)
 -------------------------
 - Don't output the default archive title ("Archive") on the blog page when a hamilton_home_title isn't set in the Customizer.
