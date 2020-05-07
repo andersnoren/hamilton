@@ -50,6 +50,10 @@ Source: https://www.pexels.com/u/fancycrave-60738/
 
 == Changelog ==
 
+Version 2.0.3 (2020-05-07)
+-------------------------
+- Fixed the navigation toggle having a background color when dark mode is active (thanks, Melvyn Tan).
+
 Version 2.0.2 (2020-05-01)
 -------------------------
 - Fixed the archive navigation having underlined links (thanks, @ventair).
