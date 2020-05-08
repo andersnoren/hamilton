@@ -32,7 +32,6 @@ if ( ! function_exists( 'hamilton_setup' ) ) :
 			'width'       => 600,
 			'flex-height' => true,
 			'flex-width'  => true,
-			'header-text' => array( 'site-title', 'site-description' ),
 		) );
 		
 		// Title tag

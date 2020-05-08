@@ -50,6 +50,10 @@ Source: https://www.pexels.com/u/fancycrave-60738/
 
 == Changelog ==
 
+Version 2.0.4 (2020-05-07)
+-------------------------
+- Removed the `header-text` parameter from `add_theme_support( 'custom-logo' );`, fixing issue where the logo might become hidden.
+
 Version 2.0.3 (2020-05-07)
 -------------------------
 - Fixed the navigation toggle having a background color when dark mode is active (thanks, Melvyn Tan).
