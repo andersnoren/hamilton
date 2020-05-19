@@ -50,6 +50,10 @@ Source: https://www.pexels.com/u/fancycrave-60738/
 
 == Changelog ==
 
+Version 2.0.5 (2020-05-19)
+-------------------------
+- Wrapped the comments section in a div with the `comments` ID, so the `comments_popup_link()` has an element to point to (thanks, @jeroenrotty).
+
 Version 2.0.4 (2020-05-07)
 -------------------------
 - Removed the `header-text` parameter from `add_theme_support( 'custom-logo' );`, fixing issue where the logo might become hidden.
