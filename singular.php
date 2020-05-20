@@ -70,15 +70,15 @@ if ( have_posts() )  :
 			
 			if ( get_post_type() == 'post' ) : ?>
 
-				<div class="meta bottom section-inner thin group">
+				<div class="meta bottom section-inner thin">
 				
 					<?php if ( get_the_tags() ) : ?>
 				
-						<p class="tags"><?php the_tags( ' #', ' #', ' ' ); ?></p>
+						<p class="tags"><?php the_tags( '<span>#', '</span><span>#', '</span> ' ); ?></p>
 					
 					<?php endif; ?>
 
-					<p><a href="<?php the_permalink(); ?>"><?php the_date( get_option( 'date_format' ) ); ?></a>
+					<p class="post-date"><a href="<?php the_permalink(); ?>"><?php the_date( get_option( 'date_format' ) ); ?></a>
 
 				</div><!-- .meta -->
 

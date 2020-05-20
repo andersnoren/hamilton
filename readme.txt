@@ -50,6 +50,16 @@ Source: https://www.pexels.com/u/fancycrave-60738/
 
 == Changelog ==
 
+Version 2.0.6 (2020-05-20)
+-------------------------
+- Removed some gallery block styles no longer needed since the entry-content style restructure in 2.0.0.
+- Removed the extra 16px bottom margin from gallery blocks when the markup structure is ´.wp-block-gallery > .blocks-gallery-grid`.
+- Changed the entry content links from using borders to using `text-decoration: underline`, to make them work better with block styles.
+- Tweaked list styles to give them better default margins.
+- Improved structure of bottom meta with flex, removed excessive vertical margin of the meta paragraphs.
+- Removed the vertical margin between stacked gallery blocks of the same alignment, to match the styling of the old `[gallery]` shortcode.
+- Added the "Requires at least and "Tested up to" headers to `style.css`, per new Theme Directory requirements.
+
 Version 2.0.5 (2020-05-19)
 -------------------------
 - Wrapped the comments section in a div with the `comments` ID, so the `comments_popup_link()` has an element to point to (thanks, @jeroenrotty).
