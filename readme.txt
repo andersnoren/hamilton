@@ -50,6 +50,10 @@ Source: https://www.pexels.com/u/fancycrave-60738/
 
 == Changelog ==
 
+Version 2.0.7 (2020-05-20)
+-------------------------
+- Improved the stacked gallery behavior when using the old markup structure.
+
 Version 2.0.6 (2020-05-20)
 -------------------------
 - Removed some gallery block styles no longer needed since the entry-content style restructure in 2.0.0.

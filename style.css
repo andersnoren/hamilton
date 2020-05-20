@@ -2,7 +2,7 @@
 
 	Theme Name: Hamilton
     Text Domain: hamilton
-	Version: 2.0.6
+	Version: 2.0.7
 	Description: Hamilton is a clean WordPress portfolio theme for creatives. It displays posts in a beautiful image grid that can be set to either two or three columns, which makes it a perfect fit for photographers, illustrators or graphic designers looking for a theme for their portfolio. It also features Block Editor/Gutenberg support, a dark mode, custom background color support, a resume page template, responsive design, Jetpack infinite scroll support, editor styling, and much more. Demo: https://andersnoren.se/themes/hamilton/
 	Tags: blog, two-columns, three-columns, custom-menu, featured-images, threaded-comments, translation-ready, grid-layout, custom-background, custom-logo, editor-style, sticky-post, theme-options, portfolio, photography, block-styles, wide-blocks
 	Author: Anders Norén
@@ -1478,12 +1478,21 @@ a {
 	margin-bottom: -16px;
 }
 
-.wp-block-gallery + .wp-block-gallery {
+ul.wp-block-gallery + .wp-block-gallery:not(.alignfull):not(.alignwide):not(.alignleft):not(.alignright):not(.aligncenter):not(.alignone) {
+	margin-top: -30px;
+}
+
+ul.wp-block-gallery.alignwide + .wp-block-gallery.alignwide,
+ul.wp-block-gallery.alignfull + .wp-block-gallery.alignfull {
+	margin-top: -2.5em;
+}
+
+figure.wp-block-gallery + .wp-block-gallery:not(.alignfull):not(.alignwide):not(.alignleft):not(.alignright):not(.aligncenter):not(.alignone) {
 	margin-top: calc( ( 30px - 16px ) / -1 );
 }
 
-.entry-content .wp-block-gallery.alignwide + .wp-block-gallery.alignwide,
-.entry-content .wp-block-gallery.alignfull + .wp-block-gallery.alignfull {
+figure.wp-block-gallery.alignwide + .wp-block-gallery.alignwide,
+figure.wp-block-gallery.alignfull + .wp-block-gallery.alignfull {
 	margin-top: calc( ( 2.5em - 16px ) / -1 );
 }
 
