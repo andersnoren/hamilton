@@ -51,6 +51,10 @@ Source: https://www.pexels.com/u/fancycrave-60738/
 
 == Changelog ==
 
+Version 2.1.2 (2022-07-01)
+-------------------------
+- Improved fonts.css enqueue for child themes.
+
 Version 2.1.1 (2022-06-29)
 -------------------------
 - Added "Requires PHP" to style.css.

@@ -81,7 +81,7 @@ if ( ! function_exists( 'hamilton_load_style' ) ) :
 
 		$theme_version = wp_get_theme( 'hamilton' )->get( 'Version' );
 
-		wp_register_style( 'hamilton-fonts', get_stylesheet_directory_uri() . '/assets/css/fonts.css' );
+		wp_register_style( 'hamilton-fonts', get_theme_file_uri( '/assets/css/fonts.css' ) );
 		wp_enqueue_style( 'hamilton-style', get_stylesheet_uri(), array( 'hamilton-fonts' ), $theme_version );
 		
 	}
@@ -372,7 +372,7 @@ if ( ! function_exists( 'hamilton_block_editor_styles' ) ) :
 
 		$theme_version = wp_get_theme( 'hamilton' )->get( 'Version' );
 
-		wp_register_style( 'hamilton-block-editor-styles-font', get_stylesheet_directory_uri() . '/assets/css/fonts.css' );
+		wp_register_style( 'hamilton-block-editor-styles-font', get_theme_file_uri( '/assets/css/fonts.css' ) );
 		wp_enqueue_style( 'hamilton-block-editor-styles', get_theme_file_uri( '/assets/css/hamilton-block-editor-styles.css' ), array( 'hamilton-block-editor-styles-font' ), $theme_version, 'all' );
 
 	}
