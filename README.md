@@ -2,7 +2,7 @@
 
 Hamilton is a clean WordPress portfolio theme for creatives. It displays posts in a beautiful image grid that can be set to either two or three columns, which makes it a perfect fit for photographers, illustrators or graphic designers looking for a theme for their portfolio. It also features Block Editor/Gutenberg support, a dark mode, custom background color support, a resume page template, responsive design, Jetpack infinite scroll support, editor styling, and much more.
 
-![Hamilton](https://github.com/andersnoren/hamilton/blob/main/screenshot.png)
+![Hamilton](https://github.com/andersnoren/hamilton/blob/master/screenshot.jpg)
 
 You can download the latest stable release of Hamilton [from WordPress.org](https://wordpress.org/themes/hamilton/).
 
